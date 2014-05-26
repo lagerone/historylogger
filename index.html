@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>HistoryLogger demo</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="assets/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="build/historylogger.css">
+		<!-- // <script src="http://localhost:35729/livereload.js"></script> -->
+		<style>
+			.demo-text {
+				max-width: 350px;
+				margin: 2em auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<h1>HistoryLogger demo</h1>
+					<div class="demo-text">
+						<p>
+							HistoryLogger i a logger that keeps log history. 
+							Hover the latest log message to show the log history.
+							Click any log iten to collapse/expand the log.
+						</p>
+						<p>Tested in Chrome 35.</p>
+					</div>
+					<button id="demo-button" class="btn btn-lg btn-primary">Run the demo</button>
+					<button id="empty-button" class="btn btn-lg btn-danger">Clear the log</button>
+				</div>
+			</div>
+		</div>
+		<script src="assets/jquery/dist/jquery.js"></script>
+		<script src="assets/spin.js/spin.js"></script>
+		<script src="build/HistoryLogger.min.js"></script>
+		<script src="src/demo.js"></script>
+	</body>
+</html>

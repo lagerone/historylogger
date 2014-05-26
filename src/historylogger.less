@@ -1,0 +1,90 @@
+@bgColor: #d9edf7;
+@borderColor: #bce8f1;
+@color: #31708f;
+@wrapperWidth: 300px;
+
+#logger-wrapper {
+
+	*, *:before, *:after {
+		-moz-box-sizing: border-box; 
+		-webkit-box-sizing: border-box; 
+		box-sizing: border-box;
+	}
+
+	width: @wrapperWidth;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding-top: 35px;
+	background-color: transparent;
+	transition: all 0.3s ease-in-out;
+
+	.logger-controll {
+		display: none;
+		position: absolute;
+		top: 10px;
+		right: 0;
+		width: @wrapperWidth;
+		height: 20px;
+		text-align: center;
+	}
+
+	.logger-item {
+		margin-bottom: 2px;
+		padding: .5em;
+		background-color: @bgColor;
+		border: 1px solid @borderColor;
+		border-radius: 3px 0 0 3px;
+		color: @color;
+		cursor: pointer;
+	}
+	
+	.logger-item-collapsed {
+		display: none;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 16px;
+	}
+
+	.logger-item-datetime {
+		font-size: 11px;
+	}
+	
+	.logger-item-msg {
+		font-size: 14px;
+		font-weight: bold;
+	}
+
+	&:hover {
+		.logger-controll {
+			display: block;
+		}		
+	}
+
+	&.logger-wrapper-collapsed {
+		width: 60px;
+
+		.logger-controll {
+			display: none;
+		}
+
+		.logger-item-expanded {
+			display: none;
+		}
+
+		.logger-item-collapsed {
+			display: block;
+		}
+
+		.logger-item {
+			display: none;
+		}
+
+		.logger-item:first-child {
+			display: block;
+		}
+
+	}
+
+}

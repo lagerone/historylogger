@@ -1,0 +1,21 @@
+{
+  "name": "HistoryLogger",
+  "version": "0.0.0",
+  "authors": [
+    "Daniel Lager <daniel.lager@it.cdon.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.1.1",
+    "spin.js": "~2.0.1"
+  }
+}
