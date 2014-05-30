@@ -2,7 +2,7 @@
 
 HistoryLogger i a logger that keeps log history. 
 Hover the latest log message to show the log history.
-Click any log iten to collapse/expand the log.
+Click any log item to collapse/expand the log.
 
 HistoryLogger requires no dependencies.
 
